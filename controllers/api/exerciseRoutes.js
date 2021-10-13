@@ -4,7 +4,15 @@ const router = express.Router();
 const Workout = require("../../models/Workout");
 
 router.get("/", (req, res) => {
-  Workout.find({})
+  Workout.aggregate([
+    {
+      $set: {
+        totalDuration: {
+          $sum: "$exercises.duration",
+        },
+      },
+    },
+  ])
     .then((dbWorkout) => {
       res.json(dbWorkout);
     })
@@ -38,13 +46,31 @@ router.put("/:id", ({ params, body }, res) => {
 });
 
 router.get("/range", (req, res) => {
-  Workout.find({})
+  Workout.aggregate([
+    {
+      $set: {
+        totalDuration: {
+          $sum: "$exercises.duration",
+        },
+      },
+    },
+  ])
     .limit(7)
     .then((dbWorkout) => {
       res.json(dbWorkout);
     })
     .catch((err) => {
       res.json(err);
+    });
+});
+
+router.delete("/", ({ body }, res) => {
+  Workout.findByIdAndRemove(body.id)
+    .then(() => {
+      res.json(true);
+    })
+    .catch((err) => {
+      res.status(400).json(err);
     });
 });
 
