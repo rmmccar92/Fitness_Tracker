@@ -21,10 +21,13 @@ Ryan McCarthy
 
 ## Links
 
-[Live app Link](https://sleepy-eyrie-63966.herokuapp.com/?id=61662d623c449e0016a6ffcb)
-[Repo Link](https://github.com/rmmccar92/Fitness_Tracker)
+- [Live app Link](https://sleepy-eyrie-63966.herokuapp.com/?id=61662d623c449e0016a6ffcb)
+
+- [Repo Link](https://github.com/rmmccar92/Fitness_Tracker)
 
 ## Demo
+
+![Fitness Tracker Demo](https://github.com/rmmccar92/Fitness_Tracker/blob/main/Assets/demo/Fitness_Tracker_demo.gif)
 
 ## Questions
 
