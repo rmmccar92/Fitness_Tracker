@@ -7,19 +7,22 @@
 ## Table of Contents
 
 - [Description](#description)
-- [Installation](#installation)
+- [Links](#Links)
 - [Usage](#usage)
 - [Questions](#questions)
 
 ## Description
 
+This application allows the user to track their workouts through the week. It uses mongoose to create a database with user entered workouts and returns visuals a stats related to the individuals' workout regiment.
+
 ## Authors
 
 Ryan McCarthy
 
-## Installation
+## Links
 
-## Usage
+[Live app Link](https://sleepy-eyrie-63966.herokuapp.com/?id=61662d623c449e0016a6ffcb)
+[Repo Link](https://github.com/rmmccar92/Fitness_Tracker)
 
 ## Demo
 
